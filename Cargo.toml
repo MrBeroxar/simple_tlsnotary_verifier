@@ -1,0 +1,19 @@
+[package]
+name = "tlsnotary_verifier"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tlsn-core = { git = "https://github.com/tlsnotary/tlsn", package = "tlsn-core" }
+tlsn-verifier = { git = "https://github.com/tlsnotary/tlsn", package = "tlsn-verifier" }
+tlsn-common = { git = "https://github.com/tlsnotary/tlsn", package = "tlsn-common" }
+tlsn-formats = { git = "https://github.com/tlsnotary/tlsn", package = "tlsn-formats" }
+tlsn-examples = { git = "https://github.com/tlsnotary/tlsn", package = "tlsn-examples" }
+tlsn-server-fixture = { git = "https://github.com/tlsnotary/tlsn", package = "tlsn-server-fixture" }
+
+bincode = "1.3.1"
+chrono = "0.4"
+hex = "0.4"
+clap = { version = "4.5", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+
